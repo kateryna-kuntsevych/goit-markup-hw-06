@@ -37,8 +37,16 @@ a {
 .nav-link {
   color: #2e2f42;
 }
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
 .contacts-link {
   color: inherit;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf;
 }
 
 /* Hero */
@@ -66,7 +74,10 @@ a {
   cursor: pointer;
   background-color: #4d5ae5;
 }
-
+.button:hover,
+.button:focus {
+  background: #404bbf;
+}
 /* Our advantages */
 .list-item-title {
   font-weight: 500;
