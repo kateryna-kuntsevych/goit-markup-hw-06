@@ -8,16 +8,41 @@ body {
   color: #434455;
   background-color: #fff;
 }
+
+h1,h2,h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 ul {
   list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
+
+img {
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
 
+.container { 
+  max-width: 1440px;
+  padding-left:156px;  
+  padding-right:  156px;
+  margin-left:  
+  margin-right:  
+  }
+
 /* Header */
 .header {
   color: #2e2f42;
+  
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -27,12 +52,17 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo-color {
   color: #2e2f42;
 }
 .nav-list {
+  display: flex;
+  gap: 40px;
   font-weight: 500;
+  
 }
 .nav-link {
   color: #2e2f42;
@@ -48,6 +78,26 @@ a {
 .contacts-link:focus {
   color: #404bbf;
 }
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+ 
+}
+
+.navigation {
+  display: flex;
+  gap: 76px;
+}
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
+.header-list-items {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 
 /* Hero */
 .hero-section {
