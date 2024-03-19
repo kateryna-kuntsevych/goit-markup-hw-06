@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -8,41 +13,35 @@ body {
   color: #434455;
   background-color: #fff;
 }
-
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   margin: 0;
 }
-
 p {
   margin: 0;
 }
-
 ul {
   list-style-type: none;
   padding-left: 0;
   margin: 0;
 }
-
 img {
   display: block;
 }
-
 a {
   text-decoration: none;
 }
-
-.container { 
+.container {
   max-width: 1440px;
-  padding-left:156px;  
-  padding-right:  156px;
-  margin-left:  
-  margin-right:  
-  }
+  padding-left: 156px;
+  padding-right: 156px;
+  margin: 0 auto;
+}
 
 /* Header */
 .header {
   color: #2e2f42;
-  
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -62,7 +61,6 @@ a {
   display: flex;
   gap: 40px;
   font-weight: 500;
-  
 }
 .nav-link {
   color: #2e2f42;
@@ -82,9 +80,7 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 40px;
- 
 }
-
 .navigation {
   display: flex;
   gap: 76px;
@@ -98,7 +94,6 @@ a {
   padding-bottom: 24px;
 }
 
-
 /* Hero */
 .hero-section {
   background-color: #2e2f42;
@@ -110,6 +105,8 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  padding-top: 188px;
+  margin-bottom: 54px;
 }
 .contacts {
   font-style: normal;
@@ -123,11 +120,24 @@ a {
   color: #fff;
   cursor: pointer;
   background-color: #4d5ae5;
+  margin-bottom: 188px;
+  border-radius: 4px;
+  padding: 16px 32px;
 }
 .button:hover,
 .button:focus {
   background: #404bbf;
 }
+.transfer {
+  display: block;
+}
+.section-flex-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Our advantages */
 .list-item-title {
   font-weight: 500;
