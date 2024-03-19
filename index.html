@@ -22,7 +22,8 @@
                 <div class="flex-box">
                     <nav class="navigation">
 
-                        <a class="logo" href="./index.html">Web<span
+                        <a class="logo header-list-items"
+                            href="./index.html">Web<span
                                 class="logo-color">Studio</span></a>
 
                         <ul class="nav-list">
@@ -73,12 +74,11 @@
             </section>
 
             <!-- Our advantages -->
-            <section>
-                <div class="container our-advantages">
-
+            <section class="section">
+                <div class="container">
                     <h2 hidden>Our advantages</h2>
 
-                    <ul class="section-list">
+                    <ul class="list-flex">
                         <li class="list-item">
                             <h3 class="list-item-title">Strategy</h3>
                             <p class="list-text">Our goal is to identify the
@@ -122,12 +122,12 @@
             </section>
 
             <!-- Our Team -->
-            <section class="section-our-team">
+            <section class="section our-team">
                 <div class="container">
                     <h2 class="section-title">Our Team</h2>
 
-                    <ul>
-                        <li class="section-list">
+                    <ul class="section-list">
+                        <li class="section-list-item">
                             <img
                                 src="./images/mark.jpg"
                                 alt="Mark Guerrero"
@@ -136,7 +136,7 @@
                             <h3 class="card-title">Mark Guerrero</h3>
                             <p class="card-text">Product Designer</p>
                         </li>
-                        <li class="section-list">
+                        <li class="section-list-item">
                             <img
                                 src="./images/tom.jpg"
                                 alt="Tom Ford"
@@ -145,7 +145,7 @@
                             <p class="card-text">Frontend
                                 Developer</p>
                         </li>
-                        <li class="section-list">
+                        <li class="section-list-item">
                             <img
                                 src="./images/camila.jpg"
                                 alt="Camila Garcia"
@@ -153,7 +153,7 @@
                             <h3 class="card-title">Camila Garcia</h3>
                             <p class="card-text">Marketing</p>
                         </li>
-                        <li class="section-list">
+                        <li class="section-list-item">
                             <img
                                 src="./images/daniel.jpg"
                                 alt="Daniel Wilson"
@@ -166,69 +166,75 @@
             </section>
 
             <!-- Our Portfolio -->
-            <section>
+            <section class="section">
                 <div class="container">
                     <h2 class="section-title">Our Portfolio</h2>
                     <ul>
-                        <li class="section-list">
-                            <img
-                                src="./images/BankingApp.jpg"
-                                alt="Banking App"
-                                width="360">
+                        <span class="section-list top-row">
+                            <li class="list-items">
+                                <img
+                                    src="./images/BankingApp.jpg"
+                                    alt="Banking App"
+                                    width="360">
 
-                            <h3 class="card-title align-left">Banking App</h3>
-                            <p class="card-text align-left">App</p>
-                        </li>
-                        <li class="section-list">
-                            <img
-                                src="./images/CashlessPayment.jpg"
-                                alt="Cashless Payment"
-                                width="360">
-                            <h3 class="card-title align-left">Cashless
-                                Payment</h3>
-                            <p class="card-text align-left">Marketing</p>
-                        </li>
-                        <li class="section-list">
-                            <img
-                                src="./images/MeditationApp.jpg"
-                                alt="Meditation App"
-                                width="360">
-                            <h3 class="card-title align-left">Meditation
-                                App</h3>
-                            <p class="card-text align-left">App</p>
-                        </li>
-
-                        <li class="section-list">
-                            <img
-                                src="./images/TaxiService.jpg"
-                                alt="Taxi Service"
-                                width="360">
-                            <h3 class="card-title align-left">Taxi Service</h3>
-                            <p class="card-text align-left">Marketing</p>
-                        </li>
-                        <li class="section-list">
-                            <img
-                                src="./images/ScreenIllustrations.jpg"
-                                alt="Screen Illustrations"
-                                width="360">
-                            <h3 class="card-title align-left">Screen
-                                Illustrations</h3>
-                            <p class="card-text align-left">Design</p>
-                        </li>
-                        <li class="section-list">
-                            <img
-                                src="./images/OnlineCourses.jpg"
-                                alt="Online Courses"
-                                width="360">
-                            <h3 class="card-title align-left">Online
-                                Courses</h3>
-                            <p class="card-text align-left">Marketing</p>
-                        </li>
+                                <h3 class="card-title align-left">Banking
+                                    App</h3>
+                                <p class="card-text align-left">App</p>
+                            </li>
+                            <li class="list-items">
+                                <img
+                                    src="./images/CashlessPayment.jpg"
+                                    alt="Cashless Payment"
+                                    width="360">
+                                <h3 class="card-title align-left">Cashless
+                                    Payment</h3>
+                                <p class="card-text align-left">Marketing</p>
+                            </li>
+                            <li class="list-items">
+                                <img
+                                    src="./images/MeditationApp.jpg"
+                                    alt="Meditation App"
+                                    width="360">
+                                <h3 class="card-title align-left">Meditation
+                                    App</h3>
+                                <p class="card-text align-left">App</p>
+                            </li>
+                        </span>
+                        <span class="section-list">
+                            <li class="list-items">
+                                <img
+                                    src="./images/TaxiService.jpg"
+                                    alt="Taxi Service"
+                                    width="360">
+                                <h3 class="card-title align-left">Taxi
+                                    Service</h3>
+                                <p class="card-text align-left">Marketing</p>
+                            </li>
+                            <li class="list-items">
+                                <img
+                                    src="./images/ScreenIllustrations.jpg"
+                                    alt="Screen Illustrations"
+                                    width="360">
+                                <h3 class="card-title align-left">Screen
+                                    Illustrations</h3>
+                                <p class="card-text align-left">Design</p>
+                            </li>
+                            <li class="list-items">
+                                <img
+                                    src="./images/OnlineCourses.jpg"
+                                    alt="Online Courses"
+                                    width="360">
+                                <h3 class="card-title align-left">Online
+                                    Courses</h3>
+                                <p class="card-text align-left">Marketing</p>
+                            </li>
+                        </span>
                     </ul>
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer class="footer container">
+
             <a class="logo"
                 href="./index.html">Web<span
                     class="logo-footer">Studio</span></a>
@@ -236,6 +242,7 @@
                 Increase the flow of customers and sales for your business
                 with digital marketing & growth solutions.
             </p>
+
         </footer>
     </body>
 </html>
