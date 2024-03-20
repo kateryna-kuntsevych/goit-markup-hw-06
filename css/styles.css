@@ -36,6 +36,7 @@ a {
 .container {
   max-width: 1158px;
   margin: 0 auto;
+  padding: 0 15px 0 15px;
 }
 
 /* Header */
@@ -64,6 +65,7 @@ a {
 }
 .nav-link {
   color: #2e2f42;
+  padding: 24px 0 24px;
 }
 .nav-link:hover,
 .nav-link:focus {
