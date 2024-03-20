@@ -36,13 +36,15 @@ a {
 .container {
   max-width: 1158px;
   margin: 0 auto;
-  padding: 0 15px 0 15px;
 }
 
 /* Header */
 .header {
   color: #2e2f42;
   border-bottom: 1px solid #e7e9fc;
+}
+.header.container {
+  padding: 0 15px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -83,7 +85,6 @@ a {
   justify-content: space-between;
   column-gap: 40px;
   flex-wrap: wrap;
-  padding: 0 15px;
 }
 .flex-box.container {
   padding: 24px 0;
@@ -139,7 +140,7 @@ a {
 }
 
 /* Our advantages */
-visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
