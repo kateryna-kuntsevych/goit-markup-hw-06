@@ -67,7 +67,7 @@ a {
 }
 .nav-link {
   color: #2e2f42;
-  padding: 24px 0 24px;
+  padding: 24px 0;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -87,7 +87,7 @@ a {
   flex-wrap: wrap;
 }
 .flex-box.container {
-  padding: 24px 0;
+  padding: 0 15px;
 }
 .navigation {
   display: flex;
@@ -176,6 +176,9 @@ a {
 /* Our Team  */
 .section.our-team {
   background-color: #f4f4fd;
+}
+.list-item {
+  flex-basis: calc((100% - 72px) / 4);
 }
 .section-title {
   font-weight: 700;
