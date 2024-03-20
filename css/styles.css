@@ -35,7 +35,6 @@ a {
 }
 .container {
   max-width: 1158px;
-  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -62,7 +61,6 @@ a {
   display: flex;
   gap: 40px;
   font-weight: 500;
-  /* padding: 24px 0; */
 }
 .nav-link {
   color: #2e2f42;
@@ -83,6 +81,9 @@ a {
   justify-content: space-between;
   column-gap: 40px;
   flex-wrap: wrap;
+  padding: 0 15px;
+}
+.flex-box.container {
   padding: 24px 0;
 }
 .navigation {
