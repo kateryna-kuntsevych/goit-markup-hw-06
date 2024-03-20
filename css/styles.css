@@ -62,7 +62,7 @@ a {
   display: flex;
   gap: 40px;
   font-weight: 500;
-  padding: 24px 0;
+  /* padding: 24px 0; */
 }
 .nav-link {
   color: #2e2f42;
@@ -83,6 +83,7 @@ a {
   justify-content: space-between;
   column-gap: 40px;
   flex-wrap: wrap;
+  padding: 24px 0;
 }
 .navigation {
   display: flex;
@@ -136,7 +137,14 @@ a {
 
 /* Our advantages */
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 .list-item-title {
   font-weight: 500;
@@ -198,7 +206,6 @@ a {
   display: flex;
   justify-content: center;
   gap: 24px;
-  column-gap: 24px;
   row-gap: 48px;
   flex-direction: row;
 }
