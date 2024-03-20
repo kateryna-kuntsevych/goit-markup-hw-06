@@ -136,16 +136,6 @@ a {
 }
 
 /* Our advantages */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
 .list-item-title {
   font-weight: 500;
   font-size: 20px;
@@ -164,7 +154,7 @@ a {
   padding-bottom: 120px;
 }
 .list-item {
-  flex: 1;
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 /* Our Team  */
@@ -206,7 +196,6 @@ a {
   display: flex;
   justify-content: center;
   gap: 24px;
-  row-gap: 48px;
   flex-direction: row;
 }
 
@@ -221,6 +210,8 @@ a {
 
 .section-list.wrap {
   flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 .card {
   padding: 32px 16px;
