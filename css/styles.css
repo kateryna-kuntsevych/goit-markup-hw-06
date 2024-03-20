@@ -60,8 +60,9 @@ a {
 }
 .nav-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
   font-weight: 500;
+  padding: 24px 0;
 }
 .nav-link {
   color: #2e2f42;
@@ -93,9 +94,6 @@ a {
   display: flex;
   gap: 40px;
 }
-.header-list-items {
-  padding: 24px 0;
-}
 
 /* Hero */
 .hero-section {
@@ -104,13 +102,14 @@ a {
   padding: 188px 0;
 }
 .hero-title {
+  display: block;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin-bottom: 54px;
+  margin: 0 auto 54px auto;
   max-width: 496px;
 }
 
@@ -128,6 +127,7 @@ a {
   min-width: 169px;
   height: 56px;
   border: none;
+  margin: 0 auto;
 }
 .button:hover,
 .button:focus {
@@ -136,14 +136,7 @@ a {
 
 /* Our advantages */
 .visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  border: 0 !important;
+  visibility: hidden;
 }
 .list-item-title {
   font-weight: 500;
@@ -239,6 +232,6 @@ a {
 .logo-footer {
   color: #f4f4fd;
 }
-.footer > a {
+.magrin {
   margin-bottom: 16px;
 }
