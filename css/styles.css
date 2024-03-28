@@ -43,6 +43,8 @@ a {
 .header {
   color: #2e2f42;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .logo {
@@ -97,6 +99,10 @@ a {
   display: flex;
   gap: 40px;
 }
+.active {
+  position: relative;
+}
+
 .header-list-items.active::after {
   box-sizing: border-box;
   content: "";
@@ -249,6 +255,37 @@ a {
 .align-left {
   text-align: left;
 }
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  opacity: 0;
+  color: #f4f4fd;
+  padding: 32px 40px 0 32px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-image {
+  display: block;
+}
+
+.image-container:hover .overlay,
+.image-container:focus .overlay {
+  opacity: 1;
+}
+
+.card {
+  position: relative;
+}
+
 /* Footer */
 .footer {
   background-color: #2e2f42;
