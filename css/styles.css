@@ -100,13 +100,12 @@ a {
   display: flex;
   gap: 40px;
 }
-.header-list-items.active {
-  position: relative;
+.nav-link.active {
   color: #404bbf;
+  position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header-list-items.active::after {
+.nav-link.active::after {
   position: absolute;
   content: "";
   left: 0;
@@ -129,7 +128,8 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440рх;
+  width: 100%;
+  max-width: 1440px;
   padding: 188px 0;
 }
 
@@ -251,8 +251,8 @@ a {
 .section-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
   flex-direction: row;
+  gap: 24px;
 }
 .social-link {
   width: 100%;
@@ -267,6 +267,28 @@ a {
 .social-link:focus {
   background-color: #404bbf;
 }
+.social-media-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 8px;
+}
+.icon-social-media {
+  fill: #f4f4fd;
+}
+
+.social-media-items {
+  display: flex;
+  border-radius: 50% 50%;
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* Our Portfolio */
 
@@ -279,7 +301,8 @@ a {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.list-items .card-text {
+.list-items:hover .overlay-text,
+.list-items:focus .overlay-text {
   transform: translateY(0%);
 }
 .section-list.wrap {
@@ -295,18 +318,11 @@ a {
 .align-left {
   text-align: left;
 }
-
 .image-container {
   position: relative;
+  overflow: hidden;
   display: inline-block;
 }
-
-.overlay {
-  overflow: hidden;
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .overlay-text {
   position: absolute;
   top: 0;
@@ -325,6 +341,7 @@ a {
 .list-items:hover .overlay-text {
   transform: translateY(0%);
 }
+
 /* Footer */
 .footer {
   background-color: #2e2f42;
@@ -354,31 +371,10 @@ a {
 .footer-margin {
   margin-right: 120px;
 }
-.social-media-list {
-  display: flex;
-  flex-direction: row;
+.social-media-list.footer-s-m-list {
   gap: 16px;
-  justify-content: center;
-  margin-top: 8px;
 }
-
-.social-media-items {
-  display: flex;
-  border-radius: 50% 50%;
-  background-color: #4d5ae5;
-  width: 40px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .social-link.footer-link:hover,
 .social-link.footer-link:focus {
   background-color: #31d0aa;
-}
-
-.icon-social-media {
-  fill: #f4f4fd;
 }
