@@ -265,7 +265,7 @@ a {
 }
 .social-link:hover,
 .social-link:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 /* Our Portfolio */
@@ -354,11 +354,6 @@ a {
 .footer-margin {
   margin-right: 120px;
 }
-/* SVG social-media*/
-.icon-social-media {
-  fill: #f4f4fd;
-}
-
 .social-media-list {
   display: flex;
   flex-direction: row;
@@ -366,6 +361,7 @@ a {
   justify-content: center;
   margin-top: 8px;
 }
+
 .social-media-items {
   display: flex;
   border-radius: 50% 50%;
@@ -376,4 +372,13 @@ a {
   align-items: center;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link.footer-link:hover,
+.social-link.footer-link:focus {
+  background-color: #31d0aa;
+}
+
+.icon-social-media {
+  fill: #f4f4fd;
 }
