@@ -527,7 +527,7 @@ a {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:focus {
+.input:focus .icon-modal {
   border-color: #4d5ae5;
 }
 .icon-modal {
@@ -608,4 +608,8 @@ a {
   border-radius: 4px;
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.privacy-policy {
+  color: #4d5ae5;
 }
