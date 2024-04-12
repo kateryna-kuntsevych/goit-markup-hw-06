@@ -124,7 +124,7 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office1.jpg);
+    url(../images/people-office1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -556,9 +556,9 @@ button {
 
 .input-wrapper svg {
   position: absolute;
-  left: 16px; /* Расстояние между иконкой и левым краем поля ввода */
-  top: 50%; /* Позиционирование иконки по вертикали по центру */
-  transform: translateY(-50%); /* Коррекция вертикального позиционирования */
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
   fill: #2e2f42;
   width: 18px;
   height: 24px;
@@ -566,9 +566,5 @@ button {
 }
 
 .input {
-  padding-left: 3px; /* Увеличение отступа слева для текста */
-}
-
-.footer-input:focus + .icon-modal {
-  fill: #31d0aa;
+  padding-left: 3px;
 }
