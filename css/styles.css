@@ -530,10 +530,10 @@ a {
 .input:focus {
   border-color: #4d5ae5;
 }
-
-.input:focus .icon-modal {
+.input:focus + .icon-modal {
   fill: #4d5ae5;
 }
+
 .icon-modal {
   position: absolute;
   left: 16px;
