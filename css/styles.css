@@ -128,8 +128,8 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
   max-width: 1440px;
+  height: 600px;
   padding: 188px 0;
 }
 
@@ -430,6 +430,7 @@ a {
 }
 .icon-input {
   margin-left: 16px;
+  fill: #fff;
 }
 
 /* Modal */
