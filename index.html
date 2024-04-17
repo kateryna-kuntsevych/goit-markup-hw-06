@@ -17,7 +17,7 @@
     </head>
     <body>
         <!-- Header -->
-        <header class="header">
+        <header class="header-page">
             <div class="flex-box container">
                 <nav class="navigation">
 
@@ -25,18 +25,25 @@
                         href="./index.html">Web<span
                             class="logo-color">Studio</span></a>
 
+                    <svg class="burger-icon" width="24" height="24">
+                        <use
+                            href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+                    </svg>
                     <ul class="nav-list">
                         <li class="header-list-items">
                             <a class="nav-link  active"
                                 href="./index.html">Studio</a>
                         </li>
                         <li class="header-list-items">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                            <a class="nav-link"
+                                href="#portfolio">Portfolio</a>
                         </li>
                         <li class="header-list-items">
-                            <a class="nav-link" href="#contacts">Contacts</a>
+                            <a class="nav-link"
+                                href="#contacts">Contacts</a>
                         </li>
                     </ul>
+
                 </nav>
 
                 <address class="contacts">
@@ -53,6 +60,7 @@
                         </li>
                     </ul>
                 </address>
+
             </div>
         </header>
 
@@ -70,7 +78,7 @@
             </section>
 
             <!-- Our advantages -->
-            <section class="section">
+            <section class="section-padding">
                 <div class="container">
                     <h2 class="visually-hidden">Our advantages</h2>
 
@@ -149,7 +157,7 @@
             </section>
 
             <!-- Our Team -->
-            <section class="section our-team">
+            <section class="section-padding section-team">
                 <div class="container">
                     <h2 class="section-title">Our Team</h2>
 
@@ -386,7 +394,7 @@
             </section>
 
             <!-- Our Portfolio -->
-            <section class="section" id="portfolio">
+            <section class="section-padding" id="portfolio">
                 <div class="container">
                     <h2 class="section-title">Our Portfolio</h2>
                     <ul class="section-list wrap">
@@ -432,7 +440,8 @@
                             <div class="card">
                                 <h3 class="card-title align-left">Cashless
                                     Payment</h3>
-                                <p class="card-text align-left">Marketing</p>
+                                <p
+                                    class="card-text align-left">Marketing</p>
                             </div>
                         </li>
                         <li class="list-items">
@@ -475,7 +484,8 @@
                             <div class="card">
                                 <h3 class="card-title align-left">Taxi
                                     Service</h3>
-                                <p class="card-text align-left">Marketing</p>
+                                <p
+                                    class="card-text align-left">Marketing</p>
                             </div>
                         </li>
                         <li class="list-items">
@@ -517,7 +527,8 @@
                             <div class="card">
                                 <h3 class="card-title align-left">Online
                                     Courses</h3>
-                                <p class="card-text align-left">Marketing</p>
+                                <p
+                                    class="card-text align-left">Marketing</p>
                             </div>
                         </li>
 
@@ -596,7 +607,8 @@
                         <label class="footer-label"
                             for="footer-useremail">
                             <input class="footer-input" type="email"
-                                name="footer-useremail" id="footer-useremail"
+                                name="footer-useremail"
+                                id="footer-useremail"
                                 placeholder="E-mail">
                         </label>
 
@@ -616,7 +628,7 @@
 
         <!---------------------------------- Modal---------------------------------------->
 
-        <div class="modal-overlay is-open">
+        <div hidden class="modal-overlay is-open">
             <div class="modal">
 
                 <button class="close-black" type="button">
@@ -637,7 +649,8 @@
                         </label>
 
                         <div class="input-wrapper">
-                            <input class="input" type="text" name="user-name"
+                            <input class="input" type="text"
+                                name="user-name"
                                 id="user-name">
                             <svg class="icon-modal" width="18"
                                 height="24">
@@ -652,11 +665,13 @@
                         </label>
 
                         <div class="input-wrapper">
-                            <input class="input" type="tel" name="user-phone"
+                            <input class="input" type="tel"
+                                name="user-phone"
                                 id="user-phone">
                             <svg class="icon-modal" width="18"
                                 height="24">
-                                <use href="./images/icons.svg#icon-phone"></use>
+                                <use
+                                    href="./images/icons.svg#icon-phone"></use>
                             </svg>
                         </div>
                     </div>
@@ -670,7 +685,8 @@
                                 name="useremail" id="useremail">
                             <svg class="icon-modal" width="18"
                                 height="24">
-                                <use href="./images/icons.svg#icon-email"></use>
+                                <use
+                                    href="./images/icons.svg#icon-email"></use>
                             </svg>
                         </div>
                     </div>
@@ -684,7 +700,8 @@
                     </div>
                     <!-- Checkbox -->
                     <div class="form-checkbox">
-                        <input class="checkbox visually-hidden" type="checkbox"
+                        <input class="checkbox visually-hidden"
+                            type="checkbox"
                             value="true"
                             id="user-privacy"
                             name="user-privacy" />
