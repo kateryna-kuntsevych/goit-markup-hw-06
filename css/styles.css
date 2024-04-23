@@ -436,6 +436,7 @@ a {
 
 /* Modal */
 .modal-overlay {
+  display: none;
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   left: 0;
@@ -622,14 +623,8 @@ a {
   color: #4d5ae5;
 }
 
-.modal-overlay {
-  display: none;
-}
-.mob-menu {
-  display: none;
-}
 /* @media Mobile First */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px), (max-width: 767px) {
   .container {
     max-width: 288px;
     padding: 0;
@@ -640,7 +635,6 @@ a {
     min-height: 56px;
     padding: 16px;
   }
-
   .navigation {
     justify-content: space-between;
     position: relative;
@@ -867,7 +861,7 @@ a {
   }
 }
 
-/* @media Tablet */
+/*===================== @media Tablet===================== */
 @media screen and (min-width: 768px) and (max-width: 1158px) {
   .container {
     max-width: 736px;
@@ -949,3 +943,20 @@ a {
     margin-right: 0;
   }
 }
+
+@media (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-x2.jpg);
+  }
+}
+.mob-menu {
+  display: none;
+}
+
+/* .is-open {
+  display: block;
+} */
